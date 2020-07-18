@@ -1,0 +1,48 @@
+						UPDATE PROJECT
+
+1. Team
+	Members: 	Trần Xuân Đức – 20176720
+			Lê Đình Quyền – 20176859
+			Vũ Ngọc Nam – 20176832
+	Topic: 	Visualization Sorting Algorithm
+2. Update after report
+2.1: Redistribute package ObjectModel
+	- add 2 classes TopObj and BottomObj
+	- there is aggregation relationship between class ColumnObj and 2 classes TopObj and BottomObj. Instances of two classes TopObj and BottomObj are made up of instances of class ColumnObj.
+2.2: The usage properties of Inheritance relationship
+	- There is relationship: 3 classes QuickSort, RadixSort, ThreeWayRadixSort extends class AnimationSort. In this relationship, all methods, functions uses this.getListObj() to call the list of initialized ColumnObj.
+
+2.3: Polymophism
+	- Update class: AnimationSort
++ add a method Sort().
+	- Update class: QuickSort, RadixSort, ThreeRadixSort
++ Override method Sort() of class AnimationSort for each above class.
++ In each above class, the method Sort() implements some separate functions.
+	- Update class: Controller
++ Initial a object: AnimationSort aS = new AnimationSort().
++ Depending on the selected option, downcasting the aS 
++ Depending on the type of aS, method Sort() will implement compatible with override method written in 3 classes QuickSort, RadixSort and ThreeWayRadixSort
+
+3. Contribution
+- Each member joins 33,3% of project
+
+- Vũ Ngọc Nam:
++ Class ThreeWayRadixSort
++ Class InputControl: getNumberCharacters(), toStringColumnHeight()
++ Class ColumnObj
++ Class BottomObj
++ Class TopObj
+- Lê Đình Quyền:
++ Class AnimationSort
++ Class QuickSort
++ Class InputControl: TestInput(), toArray()
++ Class ColumnObj
++ Class BottomObj
++ Class TopObj
+- Trần Xuân Đức:
++ Class RadixSort
++ Class Controller
++ Package ViewFXML
++ Class ColumnObj
++ Class BottomObj
++ Class TopObj

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1045.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <children>
+      <Label layoutX="190.0" layoutY="74.0" text="Enter input number:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dayso" layoutX="361.0" layoutY="67.0" prefHeight="32.0" prefWidth="461.0" />
+      <Button fx:id="buttonRun" layoutX="842.0" layoutY="67.0" mnemonicParsing="false" onAction="#Run" text="Run" textFill="#136b1c">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="title" alignment="CENTER" layoutX="319.0" layoutY="14.0" text=" Visualization Sorting Algorithms" textFill="#f80202">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="menuButton" layoutX="46.0" layoutY="67.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="123.0" text="MenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#action1" text="QuickSort" />
+          <MenuItem mnemonicParsing="false" onAction="#action2" text="RadixSort" />
+          <MenuItem mnemonicParsing="false" onAction="#action3" text="3_wayRadixSort" />
+        </items>
+      </MenuButton>
+      <Button fx:id="PlayPauseBtn" layoutX="913.0" layoutY="67.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="87.0" text="Pause" visible="false" />
+      <Pane fx:id="paneResult" layoutX="40.0" layoutY="130.0" prefHeight="537.0" prefWidth="961.0">
+         <children>
+            <ImageView fx:id="bgr" fitHeight="541.0" fitWidth="1023.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@70d6f4e10e2badb5ef394f00c17ad2bc1c14f6e7-min.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
